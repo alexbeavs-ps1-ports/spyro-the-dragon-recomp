@@ -28,6 +28,16 @@ Scaffolded with the New Project Layout. See
 **BIOS:** SCPH-5552 (Europe) retail BIOS, 524288 bytes, SHA-256 `1faaa18fa820a0225e488d9f086296b8e6c46df739666093987ff7d8fd352c09`. Supply your own dump; releases do not use OpenBIOS.
 <!-- /release-standard:bios -->
 
+## Status
+
+Latest release: v0.1.6, built on psxrecomp pin I 0.1.23.
+
+- Packages for Windows x64, Linux x64, macOS Apple Silicon and macOS Intel passed the CI build and package checks.
+- Replay check: on Windows, a build on pin I 0.1.23 played 1 of 1 recorded route to the end without a crash. That check compares memory, not the picture, and is not a play test.
+- Not claimed: full-game completion, audio fidelity or multiplayer. Setup and gameplay reports from Linux, macOS and Steam Deck are welcome.
+
+Known issues for the current version are in its [release notes](https://github.com/alexbeavs-ps1-ports/spyro-the-dragon-recomp/releases/tag/v0.1.6).
+
 <!-- retcomm-readme-launcher -->
 ## RetComM Launcher
 
@@ -95,7 +105,7 @@ release CI logs SHAs with `record_pins.sh` but builds whatever the gitlinks
 resolve to. Bump submodules deliberately — do not float on `main`/`master`
 in release CI.
 
-+## About this project
+## About this project
 
 These ports are developed by a hobbyist (a DevSecOps engineer, not a game
 programmer) with substantial AI assistance. What keeps that honest: every
@@ -119,10 +129,3 @@ tl;dr AI writes the code, but I always test it myself before pushing
   <a href="https://discord.gg/Ad9BwSzctP"><img src=".github/raid-discord.png" alt="Join the Retro AI Development (R.A.I.D.) Discord" width="200"></a>
 </p>
 <!-- /retcomm-readme-raid -->
-
-## v0.1.1 three-platform candidate
-
-This candidate targets Windows x64, Linux x64, macOS ARM64, and macOS x64.
-These setup packages require your legally owned game disc and a supported
-regional retail BIOS. They remain unpublished until their exact package tests
-and release authorization pass.
